@@ -100,16 +100,12 @@ def q11
 
   # 以下に回答を記載
 
-  sports.flatten!
-
-  sports.uniq!
-
    puts "ユーザーの趣味一覧表"
-
-  sports.each.with_index(1) do |sport, i|
-
+   
+   sports.flatten!.uniq!.each.with_index(1) do |sport, i|
    puts "No.#{i} #{sport}"
  end
+
 end
 
 def q12
@@ -143,16 +139,9 @@ def q15
 
   # 以下に回答を記載
  
-  if data1.has_key?(:age)
-    p "OK"
-    else
-    p "NG"
-  end
-  if data2.has_key?(:age)
-    p "OK"
-    else
-    p "NG"
-  end
+  p data1.has_key?(:age) ? "OK" : "NG"
+  p data2.has_key?(:age) ? "OK" : "NG"
+
 end
 
 def q16
