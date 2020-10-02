@@ -87,11 +87,9 @@ def q10
 
   # 以下に回答を記載
   foods.each do |food|
-   if foods.include?("うに")
-    puts "好物です"
-   else
-    puts "まあまあ好きです"
-   end
+
+   p food.include?("うに") ? "好物です" : "まあまあ好きです"
+   
   end
 end
 
@@ -101,7 +99,7 @@ def q11
   # 以下に回答を記載
 
    puts "ユーザーの趣味一覧表"
-   
+
    sports.flatten!.uniq!.each.with_index(1) do |sport, i|
    puts "No.#{i} #{sport}"
  end
