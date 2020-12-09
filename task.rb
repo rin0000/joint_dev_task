@@ -222,7 +222,7 @@ class Item
   end
 
   def name
-    puts "#{name}"
+    print "#{@name}"
   end
 end
 
