@@ -189,7 +189,20 @@ end
 
 class UserQ18
   # 以下に回答を記載
- 
+  attr_accessor :name, :age
+
+  def initialize(name:, age:)
+    @name = name
+    @age = age
+  end
+
+  def introduce
+    if age > 20 then
+      puts "こんにちは、#{@name}と申します。宜しくお願いいたします。"
+    else
+      puts "はいさいまいど〜、#{@name}です！！！"
+    end
+  end
 end
 
 def q18
